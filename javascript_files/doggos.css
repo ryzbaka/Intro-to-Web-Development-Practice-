@@ -1,0 +1,8 @@
+*{
+    box-sizing:border-box;
+}
+button{
+    background-color:pink;
+    color:white;
+    text-align:center;
+}

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+/* here .box is a descendant of .floated 
+.floated .box{
+    float:left;
+}
+also for this to work you have to have the box class divs wrapped in a floated class div
+*/
+.flex-container{
+    display:flex;
+    width:100%;/*squishes he elements inside proportionally*/
+    border:1px solid black;/*border for container*/
+    /*flex-wrap:wrap*/ 
+}
+.reverse{
+    /*flex-direction:row; default*/
+    /*flex-direction:row-reverse; elements bunch up the other way around towards right*/
+    /*flex-direction: column; kinda like float up but with some diferences*/
+    flex-direction:column-reverse;
+}
+.jc-right{
+    justify-content:flex-end;/* moves everything to the right*/
+    /* by default its flex-start*/
+    /*flex-centre moves it to the center*/
+    /* space-between will cause all elements to be evenly spaces*/
+    /* space-around is like space-between but with space from flex start and flex end too.*/
+    /*space-evenly is like space around but with everything with equal spaces */
+}
+.ai-fe{
+    align-items:flex-end;/*this moves it down, flex-start would move it up*/
+    /*align-items-centre makes the elements stay in the centre of the flexbox*/
+    /* if you want to use streach then you'll have to also include a height to which you want
+    to streach and make another class to set the height to inherit*/
+    /* please look through align-items:streach its super useful apparently. */
+}
+.box{/*cascading*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1{
+    border:1px solid black;
+    color:white;
+    background-color: blue;
+    height:150px;
+    width:300px;
+}
+.box-2{
+    border:1px solid black;
+    background-color: red;
+    color:white;
+    height:100px;
+    width:300px;
+}
+.box-3{
+    border:1px solid black;
+    background-color: green;
+    height:200px;
+    width:100px;
+    color:white;
+}

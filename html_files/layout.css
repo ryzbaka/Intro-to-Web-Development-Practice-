@@ -1,0 +1,45 @@
+/*
+BOX MODEL
+
+->display: *Its a CSS property that decides what mode meausurements are made by.
+            By default a div will have the display type as block. You can manage width and height.
+            A block respects height,width,padding,etc and will take the whole line to itself.
+
+           *A span will be inline by default.
+            An inline does not respect height,width, padding, etc.
+
+           *An inline-block is basically inline that repects height,width,etc.
+            So like inline, it will try to fit itself between text(think default span behaviour).
+        
+           *A flex is like block with the addition on control of interior tags too.
+
+           *Grids are relatively new and are not supported by alot of browsers.
+
+           *tables are the same as the <table></table> tag in html. Just use those.
+
+           *none simply doesn't display the element.
+
+->Height, width, border, padding and margin: *  interior content->padding->border->margin
+                                             *  width->padding->border->margin
+
+*/
+*{
+    box-sizing: border-box;/* changing the height,width includes change to padding,border and margin.*/
+}
+.ex-box{
+    border:3px solid black;
+    background-color: white;
+    height:200px;
+    width:200px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    float:left;/*go as far to the left as you possibly can and then stop there*/
+    margin-right:10px;
+    border-radius:5px;
+    font-size:30px
+}
+.ex-box:last-of-type{
+    clear:right;
+    float:right;/* also, divs usually take up the entire line unless you use something like float*/
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax Demo-Dogs</title>
+    <link rel="stylesheet" href="doggos.css"/>
+</head>
+<body>
+    <p>
+        Ajax means asynchronous javascript and xml(it doesn't do that at all by the way).
+        
+        We are going to use ajax to get data from some API.
+
+        The API that we'll be using is dog.ceo which is a simple api that returns images of dogs.
+
+        The data format that we'll use is JSON(also called JavaScript Object Notation)
+    </p>
+    <div id="code-begins">
+        <h1>Doggos</h1>
+        <div class='doggos'>
+            <script src='doggos.js'></script>
+        </div>
+        <div class="image-box">
+            <!--the image should show up here.-->
+
+        </div>
+        <div class='more-button'>
+            <button class="doggo-button">MOAR DOGGOS!</button>
+        </div>
+        <script>
+            const doggoButton=document.querySelector('.more-button')
+            doggoButton.addEventListener('click',function(event){
+                if(event.target.tagName==='BUTTON'){
+                    document.location.reload()//refreshes the page
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

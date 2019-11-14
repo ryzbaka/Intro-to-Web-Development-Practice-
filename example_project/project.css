@@ -1,0 +1,121 @@
+*{
+    box-sizing:border-box;
+}
+.banner{
+    display:flex;
+    font-size: 55px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family:Georgia;
+}
+.top-flex-container{
+    height:400px;
+    width:100%;
+    display:flex;
+}
+.big-article{
+    width:75%;
+    border:1px solid black;
+    background-color:white;/* remove this later*/
+}
+.small-article{
+    width:25%;
+    border:1px solid black;
+    background-color:white;/*remove this later */
+    display: flex;
+    flex-direction:column;
+}
+.small-heading{
+    height:15%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    font-size:27px;
+    font-family:Georgia;
+}
+.big-heading{
+    height:15%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    font-size:40px;
+    font-family:Georgia;
+}
+.bottom-flex-container{
+    height:500px;
+    background-color:lightgoldenrodyellow;
+    display:flex;
+}
+.side-article{
+    border:1px solid black;
+    width:20%;
+    display:flex;
+    background-color:white;
+    flex-direction:column;
+}
+.topics{
+    border:1px solid black;
+    width:80%;
+    background-color:lightseagreen;
+}
+.theme{
+    border:1px solid black;
+    float:bottom;
+}
+.topics{
+    display:flex;
+    flex-direction: column;
+}
+.sport{
+    border:1px solid lightsalmon;
+    height:20%;
+    background-color:lightsalmon;
+    display:flex;
+    align-items: center;
+    font-size:35px;
+}
+.politics{
+    border:1px solid lightcyan;
+    height:20%;
+    background-color:lightcyan;
+    display:flex;
+    align-items: center;
+    font-size:35px;
+}
+.technology{
+    border:1px solid lightgreen;
+    height:20%;
+    background-color:lightgreen;
+    display:flex;
+    align-items: center;
+    font-size:35px;
+}
+.local{
+    border:1px solid lightblue;
+    height:20%;
+    background-color:lightblue;
+    display:flex;
+    align-items: center;
+    font-size:35px;
+}
+.opinion{
+    border:1px solid lightpink;
+    height:20%;
+    background-color:lightpink; 
+    display:flex;
+    align-items: center;
+    font-size:35px;
+}
+.image{
+    display:flex;
+    justify-content:center;
+}
+.big-summary{
+    font-size:20px;
+    display:flex;
+    justify-content:space-evenly;
+}
+a{
+    color:black;
+}

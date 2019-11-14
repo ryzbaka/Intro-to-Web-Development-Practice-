@@ -1,0 +1,15 @@
+.box{
+    width:100px;
+    height:100px;
+    background-color:limegreen;
+    border-radius:50%;/*rounds corners enough to make it a sphere*/
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    min-height:400px;
+}
+
+/*# sourceMappingURL=/popmotion.4fa30b81.css.map */

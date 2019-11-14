@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Demo</title>
+    <link rel="stylesheet" href="js.css" />
+  </head>
+  <body>
+    <div class="red-square"></div>
+    <div class="some-text">Lorem ipsum dolor sit amet.</div>
+    <div class="some-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <script>
+      const redSquare = document.querySelector(".red-square");
+      //query selector allows you to a use a particular selector
+      //selects the first instance of the queried class
+      ///document.querySelectorAll("") will select all the instances of the class
+      //all css attributes that were kebab case will become camel case
+      redSquare.style.backgroundColor = "lime";
+      redSquare.style.height = "100px";
+
+      const textToBeChanged = document.querySelectorAll(".some-text");
+      //alert(textToBeChanged);
+      for (let i = 0; i < textToBeChanged.length; i++) {
+        const currentElement = textToBeChanged[i];
+        currentElement.innerText = "Modified";
+        currentElement.style.fontSize = "100px";
+        currentElement.Color = "red";
+      }
+    </script>
+    <!--Button event listener-->
+    <button class="hello-button">Click here for "hello world!"</button>
+    <script>
+      const helloButton = document.querySelector(".hello-button");
+      helloButton.addEventListener("click", function() {
+        alert("Clicked.");
+      });
+    </script>
+    <!--Input event listener-->
+    <input placeholder="type here..." class="text-box" />
+    <p class="to-copy-to">Nothing yet</p>
+    <script>
+      const input = document.querySelector(".text-box");
+      const para = document.querySelector(".to-copy-to");
+
+      input.addEventListener("keyup", function() {
+        para.innerText = input.value;
+      });
+      input.addEventListener("keyup", function() {
+        if (input.value === "alert me") {
+          alert("Alerted!");
+        }
+      });
+      input.addEventListener("keyup", function() {
+        if (input.value.includes("hamza")) {
+          alert("greetings creator");
+        }
+      });
+    </script>
+    <!--Event Delegation- PRETTY IMPORTANT-->
+    <div class="button-container">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+    <script>
+      document
+        .querySelector(".button-container")
+        .addEventListener("click", function(someEvent) {
+          //target tells us the tag from which an event originated
+          //target.tagName tells us the name of the target tag.(<button>'s is BUTTON  and so on)
+          if (someEvent.target.tagName === "BUTTON") {
+            if(someEvent.target.innerText==='CLICKED'){
+              alert('Already clicked.')
+            }
+            else{
+            const para = document.querySelector(".to-copy-to");
+            para.innerHTML = someEvent.target.innerText;
+            someEvent.target.innerText = "CLICKED";
+            }
+          }
+          event.stopPropagation(); //will stop further propagation
+        });
+      /* NEXT UP: MAKE A CALCULATOR(yay) */
+      //notes on type casting: typeof someVariable->gives datatype
+      //parseInt converts string into an integer.
+    </script>
+  </body>
+</html>

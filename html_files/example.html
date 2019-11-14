@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML file to demonstrate CSS</title>
+        <link rel="stylesheet" href="example.css"/>
+    </head>
+    <body>
+        <div>
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+        <div class="content"><!--in css .something means that it's a class selector-->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque optio nobis tenetur, eum cumque error enim in rem soluta magni! Esse accusamus numquam earum consequuntur fugit ducimus sed ea!</p>
+        </div>
+        <a href="#main-content">Click here for main content</a>
+        <div class="content">
+            <p>Lorem ipsum dolor sit, <span>amet consectetur</span> adipisicing elit. Iusto debitis nam voluptatum magnam, aliquid voluptas illum accusantium rem labore totam veniam. Sequi praesentium ducimus, adipisci incidunt commodi officia molestias doloremque quos repellat qui quo, ullam accusamus nulla magni quidem soluta illo tempore atque quisquam libero quasi, odio provident beatae minima?</p>
+        </div>
+        <div class="content blog-post" id="main-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, aliquid incidunt fugiat dolores similique ex dolorem aspernatur adipisci quo autem natus explicabo id hic impedit dolorum temporibus nemo? Cum a deleniti quibusdam distinctio omnis reiciendis alias, quaerat magni. Odit, saepe? Quidem doloremque perspiciatis cum a distinctio magni, libero ullam sapiente, exercitationem amet odio quis ratione? Delectus quidem error vero temporibus consequuntur ad dolor neque nulla quod asperiores sint sequi, nisi maxime, quae illo molestias! Atque dolorum quo maxime cumque. Possimus nostrum dolor nihil maxime eaque exercitationem fugiat consequuntur reprehenderit facilis obcaecati accusamus odio mollitia, blanditiis ad voluptates non? Ab earum, deserunt beatae doloremque accusantium dolor, quas nihil quaerat voluptatem sapiente distinctio vel enim? Cum rerum ipsam temporibus facilis blanditiis natus asperiores eos accusamus iure praesentium sunt ea velit itaque, ex explicabo quis dolores ratione reprehenderit quaerat ipsa consequatur. Deleniti voluptatibus illo eum. Cupiditate nobis architecto delectus consequuntur a quia voluptatum reprehenderit, facilis quasi, tempora ut id magni dignissimos eligendi amet. Quibusdam illum aspernatur, dolorem minus maxime consequatur nostrum! Placeat, quo quos repellendus eveniet maxime laboriosam, aperiam dolore officiis reiciendis, eum animi libero sunt facilis! Eaque, dolore distinctio saepe ipsa inventore assumenda libero vitae eius id officia unde, est accusantium iusto!</p>
+        </div>
+        <div class="content blog-post" id="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit quos laborum exercitationem eaque ratione ab atque laboriosam voluptate nostrum.</p>
+        </div>
+        <div class="hover-example"><!--illustration of pseudoclasses-->
+            Hover your mouse over me.
+        </div>
+    </body>
+</html>
+<!--
+    In the example.css file, if I write different css rules for the
+    same class, then the lower most will be implemented. 
+
+    The same is for elements that fall into two classes or more.
+    Think of it as a union of the two rules where the intersecting attributes
+    are resolved by picking the lowermost one.
+
+    This effect is called cascading and should be avoided at all costs.
+
+    When working with two or more classes in the same element use the
+    .class-1.class-2{} selector to fight off cascading. This is called specificity.
+
+    Classes are more specific than tags.
+    <h1 class="main-attraction">Jeremy Renner</h1>
+    Will use the rules for the .main-attraction selector and not the h1 selector.
+    
+    Think of classes as havin weight 10 and tags having weight 1.
+
+    #id-name{} is for when an id is to be used as a selector
+    Never use IDs as selectors for writing rules for elements. They overcomplicate things.
+
+    Never use #id-selector with anything else if you end up using them.
+
+    Read about pseudoclasses.
+-->

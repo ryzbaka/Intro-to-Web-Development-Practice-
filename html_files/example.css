@@ -1,0 +1,74 @@
+h1{
+    color:limegreen;
+    font-family: monospace;
+    font-size:60px;
+    font-weight:normal;
+    text-transform:uppercase;
+    border: 7px solid green;
+    text-align:center;
+}
+body{
+    background-color: bisque;
+}
+span{
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color:darkcyan;
+    text-decoration: underline;
+}
+ul{
+    list-style: square;
+
+}
+li{
+    color:orange;
+}
+.child-example:nth-child(2n+1){/* this isn't being used but look into it later */
+    color: blanchedalmond;
+}
+.content{
+    color:grey;
+    font-size:40px;
+    font-family:Comic Sans MS;
+}
+.content{
+    color:black;
+    font-size:40px;
+    font-family:Comic Sans MS;
+}
+.content.blog-post{
+    color:darkolivegreen;
+    font-size:25px;
+    font-family:BlinkMacSystemFont;   
+}
+#main-content{
+    font-weight: 600;
+}
+#summary{
+    font-weight:normal;
+}
+.blog-post{
+    color:red;
+    font-size:70;
+    font-family:cursive;
+}
+a{
+    font-size: 20px;
+    color:teal;
+    font-family:Comic Sans MS;
+}
+.hover-example{/* rules for hover class when not hovering */
+    color:green;
+    font-size:20px;
+    background-color: burlywood;
+}
+.hover-example:hover{/* rules for hover class when hovering. Here, "hover" is a pseudoclass*/
+    color:greenyellow;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color:green;
+}
+*{
+    /* never use this but what it does is that it effects everything*/
+    
+}

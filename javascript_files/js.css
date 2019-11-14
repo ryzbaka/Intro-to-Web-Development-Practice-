@@ -1,0 +1,9 @@
+*{
+    box-sizing:border-box;
+}
+.red-square {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  color: azure;
+}
